@@ -12,7 +12,7 @@ module.exports = function (context, req) {
             if (err) {
                 context.res = {
                     // status: 200, /* Defaults to 200 */
-                    body: "err"
+                    body: {edDist:1, glDist:1}
                 };
                 context.done();
             } else {
