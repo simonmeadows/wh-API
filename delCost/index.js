@@ -20,7 +20,7 @@ module.exports = function (context, req) {
                 context.res = {
                     // status: 200, /* Defaults to 200 */
 
-                    body: parts
+                    body: {edDist:20, glDist:50}
                     
                 };
                 context.done();

@@ -26,7 +26,20 @@
                 "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
                 "responses": {
                     "200": {
-                        "description": "Success operation"
+                        "description": "Success operation",
+                        "schema":{
+                          "type":"object",
+                          "properties":{
+                            "edDist":{
+                              "type":"number",
+                              "description":"Distance from Edinburgh Branch"
+                            },
+                            "glDist":{
+                              "type":"number",
+                              "description":"Distance from Glasgow Branch"
+                            }
+                          }
+                        }
                     }
                 },
                 "security": [
