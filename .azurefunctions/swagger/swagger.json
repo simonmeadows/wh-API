@@ -23,7 +23,8 @@
                         "type": "string"
                     }
                 ],
-                "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+                "description": "Returns delivery costs for both branches",
+                "summary":"Deliver cost",
                 "responses": {
                     "200": {
                         "description": "Success operation",
@@ -31,11 +32,11 @@
                             "type": "object",
                             "properties": {
                                 "edDist": {
-                                    "type": "number",
+                                    "type": "string",
                                     "description": "Distance from Edinburgh Branch"
                                 },
                                 "glDist": {
-                                    "type": "number",
+                                    "type": "string",
                                     "description": "Distance from Glasgow Branch"
                                 }
                             }
