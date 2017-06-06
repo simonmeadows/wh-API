@@ -1,7 +1,7 @@
 {
-  "name": "azure-func-delcost",
+  "name": "azure-func-wh-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Azure APIs for the Warehouse Sound Sevices",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
