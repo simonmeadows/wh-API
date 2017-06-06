@@ -19,7 +19,7 @@
                     {
                         "name": "destination",
                         "in": "query",
-                        "required": true,
+                        "required": false,
                         "type": "string"
                     }
                 ],
@@ -27,18 +27,18 @@
                 "responses": {
                     "200": {
                         "description": "Success operation",
-                        "schema":{
-                          "type":"object",
-                          "properties":{
-                            "edDist":{
-                              "type":"number",
-                              "description":"Distance from Edinburgh Branch"
-                            },
-                            "glDist":{
-                              "type":"number",
-                              "description":"Distance from Glasgow Branch"
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "edDist": {
+                                    "type": "number",
+                                    "description": "Distance from Edinburgh Branch"
+                                },
+                                "glDist": {
+                                    "type": "number",
+                                    "description": "Distance from Glasgow Branch"
+                                }
                             }
-                          }
                         }
                     }
                 },
@@ -50,12 +50,6 @@
             }
         }
     },
-    "definitions": {},
-    "securityDefinitions": {
-        "apikeyQuery": {
-            "type": "apiKey",
-            "name": "code",
-            "in": "query"
-        }
-    }
+    "definitions": {}
+
 }
