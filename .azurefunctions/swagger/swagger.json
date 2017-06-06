@@ -13,8 +13,8 @@
         "/api/delCost": {
             "get": {
                 "operationId": "/api/delCost/get",
-                "produces": [],
-                "consumes": [],
+                "produces": ["application/json"],
+                "consumes": ["application/json"],
                 "parameters": [
                     {
                         "name": "destination",
