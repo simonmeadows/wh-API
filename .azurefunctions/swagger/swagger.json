@@ -1,0 +1,41 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "MyAzureFunction"
+  },
+  "host": "delcost.azurewebsites.net",
+  "paths": {
+    "/api/HttpTriggerJS1": {
+      "get": {
+        "description": "Calls my azure function over https",
+        "summary": "this thing is pretty ok",
+        "operationId": "RunThis",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "code",
+            "default": "gcd1XTiP/Agy8irMY08BfhsSgO9cjc5PGdRVH4oAIfcKGMQP/mkcFA==",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "title": "The response of the api.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
