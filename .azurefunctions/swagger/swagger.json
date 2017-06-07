@@ -24,58 +24,64 @@
                     }
                 ],
                 "description": "Returns delivery costs for both branches",
-                "summary":"Deliver cost",
+                "summary": "Deliver cost",
                 "responses": {
                     "200": {
                         "description": "Success operation",
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "destination":{
-                                    "type":"string",
+                                "destination": {
+                                    "type": "string",
                                     "description": "Google geocoded destination"
                                 },
-                                "edDistOneWay":{
-                                    "type":"string",
+                                "edDistOneWay": {
+                                    "type": "string",
                                     "description": "Distance from Edinburgh for a one way trip"
                                 },
-                                "edDistRoundTrip":{
-                                    "type":"string",
+                                "edDistRoundTrip": {
+                                    "type": "string",
                                     "description": "Distance from Edinburgh for a round trip"
                                 },
-                                "edTime":{
-                                    "type":"string",
+                                "edTime": {
+                                    "type": "string",
                                     "description": "Time from Edinburgh for a one way trip"
                                 },
-                                "edVanCost":{
-                                    "type":"string",
+                                "edVanCost": {
+                                    "type": "string",
                                     "description": "Price for a van from Edinburgh for a round trip"
                                 },
-                                "edTruckCost":{
-                                    "type":"string",
+                                "edTruckCost": {
+                                    "type": "string",
                                     "description": "Price for a truck from Edinburgh for a round trip"
                                 },
-                                "glDistOneWay":{
-                                    "type":"string",
+                                "glDistOneWay": {
+                                    "type": "string",
                                     "description": "Distance from Glasgow for a one way trip"
                                 },
-                                "glDistRoundTrip":{
-                                    "type":"string",
+                                "glDistRoundTrip": {
+                                    "type": "string",
                                     "description": "Distance from Glasgow for a round trip"
                                 },
-                                "glTime":{
-                                    "type":"string",
+                                "glTime": {
+                                    "type": "string",
                                     "description": "Time from Glasgow for a one way trip"
                                 },
-                                "glVanCost":{
-                                    "type":"string",
+                                "glVanCost": {
+                                    "type": "string",
                                     "description": "Price for a van from Glasgow for a round trip"
                                 },
-                                "glTruckCost":{
-                                    "type":"string",
+                                "glTruckCost": {
+                                    "type": "string",
                                     "description": "Price for a truck from Glasgow for a round trip"
                                 }
                             }
+                        }
+                    },
+                    "400": {
+                        "description": "Error",
+                        "schema": {
+                            "type": "string"
                         }
                     }
                 }
