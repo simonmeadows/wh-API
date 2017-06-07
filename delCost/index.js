@@ -21,16 +21,16 @@ module.exports = function (context, req) {
 
                     body: {
                         destination: parts.destination_addresses[0],
-                        edDistOneWay: edDist,
-                        edDistRoundTrip: edDist * 2,
+                        edDistOneWay: edDist.toString() + " miles",
+                        edDistRoundTrip: (edDist * 2).toString() + " miles",
                         edTime: parts.rows[0].elements[0].duration.text,
-                        edVanCost: Math.round(edDist * 2 * 0.8),
-                        edTruckCost: Math.round(edDist * 2 * 1.35),
-                        glDistOneWay: glDist,
-                        glDistRoundTrip: glDist * 2,
+                        edVanCost: "£ " + Math.round(edDist * 2 * 0.8).toString(),
+                        edTruckCost: "£ " + Math.round(edDist * 2 * 1.35).toString(),
+                        glDistOneWay: glDist.toString() + " miles",
+                        glDistRoundTrip: (glDist * 2).toString() + " miles",
                         glTime: parts.rows[1].elements[0].duration.text,
-                        glVanCost: Math.round(glDist * 2 * 0.8),
-                        glTruckCost: Math.round(glDist * 2 * 1.35)
+                        glVanCost: "£ " + Math.round(glDist * 2 * 0.8).toString(),
+                        glTruckCost: "£ " + Math.round(glDist * 2 * 1.35).toString()
                     }
                 };
                 context.log(context.res.body);
