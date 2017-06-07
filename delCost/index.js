@@ -2,7 +2,7 @@ module.exports = function (context, req) {
     context.log('delCost trigger function processed a request.');
     if (req.query.destination) {
         var httpRequest = require('request');
-        var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=23 Water Street, Edinburgh, UK|40 Carmichael Street Glasgow, UK&destinations=' + req.query.detination + ', UK&key=AIzaSyCThzS8GAwOA0MtBlJVc3GXrL_TGrPhWZc';
+        var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=23 Water Street, Edinburgh, UK|40 Carmichael Street Glasgow, UK&destinations=' + req.query.destination + ', UK&key=AIzaSyCThzS8GAwOA0MtBlJVc3GXrL_TGrPhWZc';
         httpRequest.get({
             url: url,
         }, function (err, response, body) {
