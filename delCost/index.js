@@ -26,7 +26,7 @@ module.exports = function (context, req) {
                         edTime: parts.rows[0].elements[0].duration.text,
                         edVanCost: Math.round(edDist * 2 * 0.8),
                         edTruckCost: Math.round(edDist * 2 * 1.35),
-                        glDist: glDist,
+                        glDistOneWay: glDist,
                         glDistRoundTrip: glDist * 2,
                         glTime: parts.rows[1].elements[0].duration.text,
                         glVanCost: Math.round(glDist * 2 * 0.8),
